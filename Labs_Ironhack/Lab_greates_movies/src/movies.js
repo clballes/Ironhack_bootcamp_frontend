@@ -36,16 +36,16 @@ const scoresAverage = (moviesArray) = (moviesArray) => {
 }
 
 // Iteration 4: Drama movies - Get the average of Drama Movies
-// const dramaMoviesScore = (moviesArray) => {
-//   const drama = moviesArray.filter((movieDrama) => {
-//     return movieDrama.genre.includes("Drama");
-//   });
-// }
-// const scores = drama.map((movie) => movie.score);
+const dramaMoviesScore = (moviesArray) => {
+  const drama = moviesArray.filter((movieDrama) => {
+    return movieDrama.genre.includes("Drama");
+  });
+}
+const scores = drama.map((movie) => movie.score);
 
-// let total = 0;
-// scores.forEach((scores) => (total += scores));
-  // return (total / drama.length).toFixed(2);
+let total = 0;
+scores.forEach((scores) => (total += scores));
+  return (total / drama.length).toFixed(2);
 
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
 function orderByYear(moviesArray) { 
@@ -58,25 +58,15 @@ function orderByYear(moviesArray) {
   return copyOfMovies;
 }
 
-
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
-// function orderAlphabetically(moviesArray) {
-//   const copyOfTitle = moviesArray.map((movie) => movie);
-//   copyOfTitle.lowerCase();
-//   copyOfTitle.sort((a, b) => {
-//     if (a.title > b.title) return a.title - b.title;
-//     if (a.title < b.title) return a.title - b.title;
-//     else a.title.localeCompare(b.title)
-//     moviesArray.length < 20;
-//   });
-//   return copyOfTitle;
-// }
-const orderAlphabetically = (moviesArray) => {
-  return moviesArray
+function orderAlphabeticallyRaphaela(moviesArray) {
+  let movieTitlesAscending = moviesArray
+    .sort((a, b) => (a.title > b.title ? 1 : -1))
     .map((movie) => movie.title)
-    .sort()
-    .slice(0, 20);
-};
+    .slice(0, 21);
+
+  return movieTitlesAscending;
+}
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
 const turnHoursToMinutes = (moviesArray) => {
@@ -85,4 +75,4 @@ const turnHoursToMinutes = (moviesArray) => {
   }
 
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
-function bestYearAvg(moviesArray) {}
+function bestYearAvg(moviesArray) {}∫
