@@ -64,6 +64,7 @@ sum(mixedArr);
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbersAvg) {
+  if (!averageNumbers) return 0;
   return (sumNumbers(numbersAvg) / numbersAvg.length).toFixed(2);
 }
 
