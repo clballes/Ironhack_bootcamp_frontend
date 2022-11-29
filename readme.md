@@ -170,3 +170,10 @@ If the number cannot be converted, NaN (Not a Number) is returned.
 arr.push
 arr.shifted
 arr.unshifted
+
+# Vue
+
+## Setup and installation
+
+npm install
+npm run dev

@@ -1,6 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import myFirstComponent from './components/myFirstComponent.vue'
+import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
@@ -8,14 +8,14 @@ import myFirstComponent from './components/myFirstComponent.vue'
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="YHolaaaaa it!" />
+      <HelloWorld msg="You did it!" />
     </div>
   </header>
 
   <main>
-      <myFirstComponent />
+    <TheWelcome />
   </main>
-  </template>
+</template>
 
 <style scoped>
 header {
